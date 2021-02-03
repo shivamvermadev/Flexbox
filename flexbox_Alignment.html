@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: #778899;
+            color: white;
+        }
+        .item {
+            border: #f4f4f4 1px solid;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            /* flex: 1; */
+        }
+        #flex-container {   
+            height: 80vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+           /* align-items: flex-start;
+            align-items: flex-end; */
+
+            /* flex-direction: column; */
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: stretch;  */
+            justify-content: center;
+            /* justify-content: space-around; */
+        }
+        .item-1 {
+            align-self: flex-start;
+        }
+        .item-3 {
+            align-self: flex-end;
+        }
+    </style>
+    <title>FlexBox Basics</title>
+</head>
+<body>
+    <div id="flex-container">
+        <div class="item item-1">
+            <h3>Item 1 </h3>
+        </div>
+
+        <div class="item item-2">
+            <h3>Item 2</h3>
+        </div>
+
+        <div class="item item-3">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+</body>
+</html>
